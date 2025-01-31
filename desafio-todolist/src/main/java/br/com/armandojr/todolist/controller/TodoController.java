@@ -1,4 +1,4 @@
-package br.com.armandojr.controller;
+package br.com.armandojr.todolist.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.armandojr.entity.Todo;
-import br.com.armandojr.service.TodoService;
+import br.com.armandojr.todolist.entity.Todo;
+import br.com.armandojr.todolist.service.TodoService;
 
 @RestController
 @RequestMapping("/todos")

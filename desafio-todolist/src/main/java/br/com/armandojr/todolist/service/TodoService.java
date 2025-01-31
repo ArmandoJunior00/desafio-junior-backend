@@ -1,12 +1,12 @@
-package br.com.armandojr.service;
+package br.com.armandojr.todolist.service;
 
 import java.util.List;
 
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import br.com.armandojr.entity.Todo;
-import br.com.armandojr.repository.TodoRepository;
+import br.com.armandojr.todolist.entity.Todo;
+import br.com.armandojr.todolist.repository.TodoRepository;
 
 @Service
 public class TodoService {

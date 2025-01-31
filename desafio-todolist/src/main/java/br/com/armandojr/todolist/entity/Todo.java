@@ -1,4 +1,4 @@
-package br.com.armandojr.entity;
+package br.com.armandojr.todolist.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +10,13 @@ import jakarta.persistence.Table;
 @Table(name = "todos")
 
 public class Todo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private String descricao;
+    private boolean realizado;
+    private int prioridade;
 
     public Long getId() {
         return id;
@@ -51,12 +58,6 @@ public class Todo {
         this.prioridade = prioridade;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nome;
-    private String descricao;
-    private boolean realizado;
-    private int prioridade;
+    
 
 }
